@@ -12,7 +12,7 @@ const uploadImageController = async (req, res) => {
             })
         }
 
-        //upload to cloudinary
+        //upload to cloudinary: 
         const { url, publicId } = await uploadToCloudinary(req.file.path);
 
         const newlyUploadedImage = new Image({
